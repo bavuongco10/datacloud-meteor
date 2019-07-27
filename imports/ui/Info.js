@@ -5,7 +5,7 @@ import Links from '../api/links';
 class Info extends Component {
   render() {
     const links = this.props.links.map(
-      link => this.makeLink(link)
+      link => this.makeLink(link),
     );
 
     return (
@@ -25,8 +25,6 @@ class Info extends Component {
   }
 }
 
-export default InfoContainer = withTracker(() => {
-  return {
-    links: Links.find().fetch(),
-  };
-})(Info);
+export default InfoContainer = withTracker(() => ({
+  links: Links.find().fetch(),
+}))(Info);

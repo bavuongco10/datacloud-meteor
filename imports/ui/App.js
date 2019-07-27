@@ -1,6 +1,6 @@
 import React from 'react';
-import Hello from './Hello.jsx';
-import Info from './Info.jsx';
+import Hello from './Hello.js';
+import Info from './Info.js';
 
 const App = () => (
   <div>
