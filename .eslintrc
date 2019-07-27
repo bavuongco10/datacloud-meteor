@@ -4,18 +4,13 @@
     "es6": true
   },
   "plugins": [
-    "react",
-    "meteor"
+    "react"
   ],
   "extends": [
     "airbnb",
     "prettier",
     "@meteorjs/eslint-config-meteor"
   ],
-  "globals": {
-    "Atomics": "readonly",
-    "SharedArrayBuffer": "readonly"
-  },
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
@@ -42,5 +37,10 @@
     "no-return-assign": [
       "off"
     ]
+  },
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly",
+    "Streamy": "readonly"
   }
 }

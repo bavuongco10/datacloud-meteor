@@ -8,16 +8,18 @@
     "visualize": "meteor --production --extra-packages bundle-visualizer"
   },
   "dependencies": {
-    "@babel/runtime": "^7.3.4",
+    "@babel/runtime": "^7.5.5",
+    "@rehooks/input-value": "^1.0.0",
+    "lodash": "^4.17.15",
     "meteor-node-stubs": "^0.4.1",
     "pretty-bytes": "^5.3.0",
-    "react": "^16.5.0",
-    "react-dom": "^16.5.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
     "webtorrent": "^0.105.1"
   },
   "meteor": {
     "mainModule": {
-      "client": "client/main.jsx",
+      "client": "client/main.js",
       "server": "server/main.js"
     }
   },
@@ -30,6 +32,7 @@
     "eslint-import-resolver-meteor": "^0.4.0",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-meteor": "^5.1.0",
     "eslint-plugin-react": "^7.14.3",
     "husky": "^3.0.1",
     "lint-staged": "^9.2.1",
